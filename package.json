@@ -1,0 +1,14 @@
+{
+  "name": "make-requests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rodalladea/make-requests.git",
+  "author": "Rodrigo Prado <rprado@bluelab.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
