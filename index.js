@@ -12,6 +12,12 @@ app.post('/', (req, res) => {
     res.end();
 });
 
+app.post('/clean', (req, res) => {
+    data = { data: 'cleaned' };
+
+    res.end();
+});
+
 app.get('/data', (_, res) => {
     res.send(data);
 });
