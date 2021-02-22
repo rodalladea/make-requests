@@ -13,7 +13,7 @@ app.post('/', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    data = req;
+    data = { data: req.headers['x-forwarded-for'] || req.connection.remoteAddress };
 
     res.end();
 });
