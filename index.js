@@ -30,6 +30,11 @@ app.get('/data', (_, res) => {
 
 app.post('/facebook', (req, res) => {
     data = req.body;
+    res.end();
+});
+
+app.get('/facebook', (req, res) => {
+    data = req.body;
     res.send(req.query.hub_challenge);
 });
 
