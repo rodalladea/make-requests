@@ -35,7 +35,7 @@ app.post('/facebook', (req, res) => {
 
 app.get('/facebook', (req, res) => {
     data = req.query;
-    res.send(req.query.hub_challenge);
+    res.send(req.query['hub.challenge']);
 });
 
 app.listen(process.env.PORT || '8080');
