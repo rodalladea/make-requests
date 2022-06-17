@@ -34,7 +34,7 @@ app.post('/facebook', (req, res) => {
 });
 
 app.get('/facebook', (req, res) => {
-    data = req.body;
+    data = req.query;
     res.send(req.query.hub_challenge);
 });
 
