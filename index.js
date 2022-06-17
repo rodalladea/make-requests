@@ -28,4 +28,9 @@ app.get('/data', (_, res) => {
     res.send(data);
 });
 
+app.post('/facebook', (req, res) => {
+    data = req.body;
+    res.send(req.query.hub_challenge);
+});
+
 app.listen(process.env.PORT || '8080');
